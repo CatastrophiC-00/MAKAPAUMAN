@@ -10,4 +10,9 @@ class Subject extends Model
     {
     	return $this->hasMany(SubjectStrand::class);
     }
+
+     public function section()
+    {
+    	return $this->hasMany(Section::class);
+    }
 }
